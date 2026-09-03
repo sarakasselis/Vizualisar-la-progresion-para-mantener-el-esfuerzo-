@@ -5,4 +5,4 @@ Creamos un dispositivo wearable (para llevar puesto) que traduce el esfuerzo del
   
 Integrantes: Sara Kasselis & Prune Ferru
 
-Curso: Dispositivos Low-Tech e Interfaces Interactivas (FAU - UCH)
+Curso: Dispositivos Low-Tech e Interfaces Interactivas
