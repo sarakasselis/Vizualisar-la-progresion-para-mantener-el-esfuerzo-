@@ -4,4 +4,5 @@ Creamos un dispositivo wearable (para llevar puesto) que traduce el esfuerzo del
 * [Sesión 01 - Marco del Problema](bitacora/S01.md)
   
 Integrantes: Sara Kasselis & Prune Ferru
+
 Curso: Dispositivos Low-Tech e Interfaces Interactivas (FAU - UCH)
