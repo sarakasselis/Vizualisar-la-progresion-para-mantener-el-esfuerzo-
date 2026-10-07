@@ -1,0 +1,46 @@
+# Sesión 02 - Prototipado y Validación del Dispositivo Biométrico
+
+**Integrantes del equipo:** Sara Kasselis y Prune Ferru  
+**Curso:** Dispositivos Low-Tech e Interfaces Interactivas  
+**Carrera:** Diseño, Facultad de Arquitectura y Urbanismo (FAU), Universidad de Chile  
+
+---
+
+## 1. Definición del Concepto y Desarrollo de Hardware
+
+### Prototipo V1 (Validación Física en Protoboard)
+* **Unidad de control:** Arduino UNO.
+* **Captación biométrica:** Pulse Sensor óptico conectado a la entrada analógica `A0`.
+* **Salida de la interfaz:** Semáforo LED cromático (Pines digitales `2`, `3` y `4`).
+* **Objetivo:** Comprobar la lectura del pulso en tiempo real y la conmutación de indicadores lumínicos según el esfuerzo.
+
+### Prototipo V2 (Proyección e Integración E-Textil)
+* **Unidad de control:** Placa LilyPad Arduino (diseñada para wearables/e-textiles).
+* **Salida de la interfaz:** Cinta LED flexible integrada al borde del magnesero.
+* **Fuente de poder:** Batería de 9V con conector adaptado.
+* **Evolución ergonómica:** Eliminación de protoboard rígida y optimización para integración en tela y uso en movimiento.
+
+---
+
+## 2. Umbrales Fisiológicos y Código de Color
+
+El sistema clasifica la frecuencia cardíaca (BPM) en tres zonas de esfuerzo:
+
+* **Zona 1 — Reposo (< 85 BPM):** Estado base y ritmo cardíaco bajo control. **Activa LED Verde (Pin 2)**.
+* **Zona 2 — Esfuerzo Moderado (85 - 115 BPM):** Actividad física a ritmo medio. **Activa LED Amarillo (Pin 3)**.
+* **Zona 3 — Esfuerzo Intenso (> 115 BPM):** Exigencia física alta / umbral superior. **Activa LED Rojo (Pin 4)**.
+
+---
+
+## 3. Lógica del Algoritmo C++ (`.ino`)
+
+* **Control de tiempo dinámico:** Uso de la función `millis()` para determinar el tiempo transcurrido entre picos sin paralizar la ejecución del microcontrolador.
+* **Filtro de ruido:** Descarte de lecturas fuera del rango biológico real (40 - 200 BPM) para evitar falsos positivos provocados por el movimiento.
+* **Activación exclusiva:** Lógica condicional que asegura la iluminación de un único color a la vez según la zona fisiológica detectada.
+
+---
+
+## 4. Archivos de Respaldo
+
+* **Código fuente:** [`magnesero_lowtech.ino`](../magnesero_lowtech.ino)
+* **Memoria técnica general:** [`README.md`](../README.md)
