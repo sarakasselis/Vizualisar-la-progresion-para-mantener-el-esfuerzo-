@@ -61,3 +61,9 @@ La lógica de control desarrollada en C++ ejecuta las siguientes tareas:
 ## 6. Estructura del Repositorio
 * `magnesero_lowtech.ino`: Código fuente documentado en C++ compatible con Arduino UNO y LilyPad Arduino.
 * `README.md`: Memoria técnica y especificaciones del proyecto.
+
+---
+
+## Entregas / Bitácora Digital
+* [Sesión 01 - Marco del Problema](bitacora/S01.md)
+* [Sesión 02 - Prototipado y Validación Biométrica](bitacora/S02.md)
