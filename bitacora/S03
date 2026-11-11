@@ -1,0 +1,8 @@
+# Bitácora - Sesión N°3
+**Proyecto:** Acumulación del Esfuerzo Físico — Interfaces Low-Tech e Interactivas  
+**Autores:** Sara Kasselis & Prune Ferru  
+
+## Avances de la Sesión N°3
+- **Validación del Código Arduino:** Ajuste final del script utilizando la función `millis()` para filtrar el ruido por movimiento en la lectura analógica del pin `A0`, controlando de forma exclusiva el semáforo cromático (LEDs verde, amarilla y roja según los rangos de BPM).
+- **Prototipo Físico (V2):** Consolidación del circuito electrónico con la placa LilyPad y el sensor de pulso.
+- **Proyección Futura (V3):** Diseño de las ilustraciones conceptuales en Procreate (integración ergonómica en el torse y bandas LED en las manches) incorporadas en la lámina A1 final.
