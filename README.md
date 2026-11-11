@@ -65,5 +65,7 @@ La lógica de control desarrollada en C++ ejecuta las siguientes tareas:
 ---
 
 ## Entregas / Bitácora Digital
-* [Sesión 01 - Marco del Problema](bitacora/S01.md)
-* [Sesión 02 - Prototipado y Validación Biométrica](bitacora/S02.md)
+
+- [Sesión 01 - Marco del Problema](bitacora/S01.md)
+- [Sesión 02 - Prototipado y Validación Biométrica](bitacora/S02.md)
+- [Sesión 03 - Preentrega N°3: Integración de Código Final y Proyección V3](bitacora/S03.md)
